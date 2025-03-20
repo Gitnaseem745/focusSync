@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Global styles and theme variables
+ * Theme colors are defined here and can be switched by changing the theme in siteConfig.ts
+ */
+
+:root {
+  /* Default light theme variables */
+  --background: #f5f3ff;
+  --foreground: #000000;
+
+  /* Purple theme - default */
+  --primary: #8b5cf6;
+  --primary-dark: #7c3aed;
+  --primary-light: #ddd6fe;
+
+  /* Container width */
+  --container-width: 1200px;
+
+  /* Border Radius */
+  --radius: 16px;
+}
+
+/* Blue theme variables */
+.blue {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --primary-light: #dbeafe;
+  --background: #eff6ff;
+}
+
+/* Green theme variables */
+.green {
+  --primary: #10b981;
+  --primary-dark: #059669;
+  --primary-light: #d1fae5;
+  --background: #ecfdf5;
+}
+
+/* Winter theme variables */
+.winter {
+  --primary: #71C9CE;
+  --primary-dark: #5cbdc2;
+  --primary-light: #CBF1F5;
+  --background: #eefdfd;
+}
+
+/* Apply theme background color */
+.landing-page {
+  background-color: var(--background);
+}
+
+/* Global styles */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: var(--foreground);
+  line-height: 1.5;
+}
+
+/* Container styles */
+.container {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Selection styles */
+::selection {
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+/* Slider scrollbar style */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
