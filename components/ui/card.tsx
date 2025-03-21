@@ -47,7 +47,7 @@ export default function FeatureSectionCard({ feature, variant, className }: Feat
             </div>}
 
             {/* Feature image */}
-            {feature.image && <div className="relative min-h-[300px] max-w-[350px] rounded-lg overflow-hidden mx-auto">
+            {feature.image && <div className="relative min-h-[300px] max-w-[350px] rounded-lg overflow-hidden mx-auto pointer-events-none">
                 <Image src={feature.image.src || "/placeholder.svg"} alt={feature.image.alt} width={500} height={100} className="object-cover w-full" />
             </div>}
 

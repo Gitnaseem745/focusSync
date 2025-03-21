@@ -43,7 +43,7 @@ export default function Home() {
                     <DownloadSection content={siteConfig.downloadSection} downloadButton={siteConfig.downloadButton} />
 
                     {/* Footer with logo and social links */}
-                    <Footer logo={siteConfig.logo} socialLinks={siteConfig.socialLinks} />
+                    <Footer logo={siteConfig.logo} socialLinks={siteConfig.socialLinks} legalLinks={siteConfig.legalLinks} />
 
                     {/* Button to redirect to top of the window */}
                     <TopButton />

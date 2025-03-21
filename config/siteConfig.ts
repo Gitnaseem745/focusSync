@@ -14,7 +14,12 @@ export const siteConfig: SiteConfigContent = {
     // Site metadata
     title: "FocusSync",
     tagline: "Stay Focused. Build Habits. Achieve More.",
-
+    url: "https://yourwebsite.com/",  // Use a placeholder
+    ogImage: "/images/og-image.jpg",
+    author: "Your Name", // Placeholder for customization
+    twitterHandle: "@yourhandle", // Generic or empty
+    keywords: ["app", "productivity", "habit-tracker", "mobile", "tool", "productive"],
+    
     // Theme setting - controls which color scheme to use
     theme,
 
@@ -202,6 +207,13 @@ export const siteConfig: SiteConfigContent = {
             alt: "QR code to download app",
         },
     },
+
+    // Legal pages links
+    legalLinks: [
+        { label: "Disclaimer", href: "/#" },
+        { label: "Privacy Policy", href: "/#" }, 
+        { label: "Terms of Service", href: "/#" },
+    ],
 
     // Social media links
     socialLinks: [

@@ -19,6 +19,12 @@ export interface DownloadButtonProps {
   className?: string
 }
 
+// Link type 
+export interface LinkType {
+    label: string
+    href: string
+}
+
 // Image type
 export interface ImageType {
   src: string
@@ -109,6 +115,11 @@ export type ThemeType = "purple" | "blue" | "green" | "winter"
 export interface SiteConfigContent {
     title: string
     tagline: string
+    url: string
+    ogImage: string
+    author: string
+    twitterHandle: string
+    keywords: string[]
     theme: ThemeType
     logo: ImageType
     navigation: NavigationItem[]
@@ -122,4 +133,5 @@ export interface SiteConfigContent {
     howItWorks: HowItWorksContent
     downloadSection: DownloadSectionContent
     socialLinks: SocialLink[]
+    legalLinks: LinkType[]
 }
